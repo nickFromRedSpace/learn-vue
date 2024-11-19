@@ -5,9 +5,9 @@ const notes = ref('')
 </script>
 
 <template>
-  <textarea v-model="notes" />
-
   <textarea :value="notes" @input="notes = $event.target.value" />
+
+  <textarea v-model="notes" />
 </template>
 
 <style scoped></style>

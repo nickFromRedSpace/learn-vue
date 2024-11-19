@@ -2,20 +2,20 @@
 import { onMounted, ref } from 'vue'
 import { useGetPosts } from '@/5-http-custom composables/useGetPosts'
 
-const posts = ref([])
-
-// 👇=== useEffect with empty dependency array
-onMounted(async () => {
-  try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-    posts.value = await response.json()
-  } catch (error) {
-    console.error('Error fetching posts:', error)
-  }
-})
+// const posts = ref([])
+//
+// // 👇=== useEffect with empty dependency array
+// onMounted(async () => {
+//   try {
+//     const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     posts.value = await response.json()
+//   } catch (error) {
+//     console.error('Error fetching posts:', error)
+//   }
+// })
 
 // OR
-// const { posts } = useGetPosts();
+const { posts } = useGetPosts();
 
 </script>
 

@@ -33,4 +33,6 @@ watchEffect(() => {
   <button @click="changeCountBy(-3)">Remove 3</button>
 </template>
 
-<style scoped></style>
+<!--everything here is scoped to this component-->
+<style scoped>
+</style>

@@ -9,23 +9,33 @@ import CustomComposable from '@/5-http-custom composables/CustomComposable.vue'
 </script>
 
 <template>
-  <h3>1.</h3>
+  <h3>1. State and Effects</h3>
   <BasicState />
 
-  <h3>2.</h3>
+  <h3>2. Props and Controlled Components</h3>
   <ScratchPad />
   <basic-parent />
 
-  <h3>3.</h3>
+  <h3>3.1 If and For</h3>
   <IfAndFor />
+
+  <h3>3.2 Slots</h3>
   <TrySlots>
-    <div>this is a slot children</div>
+    <template #default>
+      <div>default slot content</div>
+    </template>
+    <template #one>
+      <div>content for slot one</div>
+    </template>
+    <template #two>
+      <div>content for slot two</div>
+    </template>
   </TrySlots>
 
-  <h3>4.</h3>
+  <h3>4. Context</h3>
   <ProviderParent />
 
-  <h3>5.</h3>
+  <h3>5. HTTP and Composable (aks hooks)</h3>
   <CustomComposable />
 </template>
 
