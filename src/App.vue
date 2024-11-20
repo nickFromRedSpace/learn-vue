@@ -21,10 +21,10 @@ import CustomComposable from '@/5-http-custom composables/CustomComposable.vue'
 
   <h3>3.2 Slots</h3>
   <TrySlots>
-    <template #default>
+    <template v-slot:default>
       <div>default slot content</div>
     </template>
-    <template #one>
+    <template v-slot:one>
       <div>content for slot one</div>
     </template>
     <template #two>

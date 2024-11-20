@@ -12,19 +12,16 @@ const hashedPassword = computed(() => {
   // return password;
 })
 
-watch(userName, () => {
-  console.log(userName.value)
-})
 </script>
 
 <template>
   <BasicInput
     formTitle="Registration"
 
-    v-model:userName="userName"
-
     :password="password"
     @update:password="(value) => (password = value)"
+
+    v-model:userName="userName"
   />
 
   <div>Hacker watching</div>

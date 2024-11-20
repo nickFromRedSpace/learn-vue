@@ -8,7 +8,7 @@ function changeCountBy(changeBy: number) {
   count.value += changeBy
 }
 
-// 👇=== useEffect
+// 👇=== useEffect with dep tracking
 watch([count], (prev) => {
   console.log(`prevcount is ${prev}`)
   console.log(`new count is ${count.value}`)

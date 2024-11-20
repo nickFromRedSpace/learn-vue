@@ -3,7 +3,7 @@ import { inject } from 'vue'
 
 const count = inject<number>('count')
 const increment = inject<() => void>("increment")
-const decrement = inject<() => void>("decrement")
+const decrement = inject<() => void>("decrement", () => count.value--)
 </script>
 
 <template>
